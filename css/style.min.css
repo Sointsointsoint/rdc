@@ -12976,17 +12976,28 @@ body.fixed {
   color: #ffc700
 }
 
-.home-slider-section .home-slider-container {
+.fp-tableCell {
   position: relative;
-  max-width: 1366px;
 }
 
-.home-slider-section .home-slider-container .home-slider-fix-box {
+.home-slider-section .home-slider-container {
   width: 100%;
   position: absolute;
-  right: 0;
-  bottom: 44px;
-  z-index: 15
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 15;
+}
+
+@media (max-width: 1199px) {
+  .home-slider-section .home-slider-container {
+    padding: 0;
+    transform: none;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+  }
+  padding: 0;
 }
 
 .home-slider-section .home-slider-container .home-slider-fix-box .home-slider-fix-scrolling .carousel-scroll-btn {
@@ -13104,7 +13115,8 @@ body.fixed {
 .home-news-section .home-news-box .home-news-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 36px
+  margin-bottom: 36px;
+  width: calc(100% - 25px);
 }
 
 .home-news-section .home-news-box .home-news-tabs-content {
@@ -13467,6 +13479,16 @@ body.fixed {
   left: 228px
 }
 
+.infrastructure-content-item-col {
+  max-width: 51.65%;
+  flex: 1 0 51.65%;
+}
+
+.infrastructure-content-item-col-two {
+  max-width: 48.35%;
+  flex: 1 0 48.35%;
+}
+
 .infrastructure-map-section .infrastructure-content.only-items {
   max-width: 375px
 }
@@ -13481,6 +13503,8 @@ body.fixed {
 }
 
 .infrastructure-map-section .infrastructure-box {
+  display: flex;
+  flex-grow: 1;
   font-family: PF DinDisplay Pro, sans-serif
 }
 
@@ -13547,7 +13571,8 @@ body.fixed {
 }
 
 .infrastructure-map-section .infrastructure-box .infrastructure-info-list .infrastructure-info-item .infrastructure-info-item-text {
-  color: #000
+  color: #000;
+  padding-right: 5px;
 }
 
 .infrastructure-map-section .infrastructure-box .infrastructure-info-list .infrastructure-info-item .infrastructure-info-item-count {
@@ -13828,7 +13853,8 @@ body.fixed {
   }
   .infrastructure-map-section .infrastructure-box .infrastructure-info-list .infrastructure-info-item .svg-icon {
     width: 28px;
-    height: 28px
+    height: 28px;
+    margin-right: 8px;
   }
   .infrastructure-map-section .infrastructure-box .infrastructure-study-box .infrastructure-study-item {
     display: block;
@@ -17097,7 +17123,7 @@ body.fixed {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 180px
+  height: 241px;
 }
 
 .tenants-card-item .product-card-image img {
@@ -17106,9 +17132,9 @@ body.fixed {
   object-fit: cover
 }
 
-@media (max-width:1689px) {
+@media (max-width:1365px) {
   .tenants-card-item .product-card-image {
-    height: 128px
+    height: 171px
   }
 }
 
@@ -17435,7 +17461,8 @@ body.fixed {
 }
 
 .slider-nav-box .owl-nav>button.disabled, .slider-nav-box .slider-arrow-btn.disabled {
-  opacity: .1
+  background-color: rgba(0, 0, 0, .1);
+  border-color: transparent;
 }
 
 .slider-nav-box .owl-nav>button .icon, .slider-nav-box .slider-arrow-btn .icon {
@@ -17832,6 +17859,13 @@ body.fixed {
 
 .home-news-box .owl-nav {
   top: 0;
+  right: 25px;
+}
+
+@media (max-width: 1199px) {
+  .home-news-box .owl-nav {
+    margin-top: 0;
+  }
 }
 
 #Obertka-tenants {
