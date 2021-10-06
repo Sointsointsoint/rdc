@@ -14191,9 +14191,25 @@ body.fixed {
 }
 
 .review-section .more-btn {
-  font-size: 11px;
+  font-size: 16px;
   line-height: 140%;
-  padding: 10px 15px;
+  padding: 18px 31px;
+}
+
+@media (max-width: 1366px) {
+  .review-section .more-btn {
+    padding: 13px 35px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .review-section .more-btn {
+    padding: 11px 15px;
+    font-size: 11px;
+    line-height: 15px;
+  }
 }
 
 @media (min-width:768px) {
@@ -17135,6 +17151,12 @@ body.fixed {
 @media (max-width:1365px) {
   .tenants-card-item .product-card-image {
     height: 171px
+  }
+}
+
+@media (max-width:767px) {
+  .tenants-card-item .product-card-image {
+    height: 95px
   }
 }
 
