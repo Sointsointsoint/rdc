@@ -3184,7 +3184,7 @@ pre code {
     top: 340px !important;
   }
   .transport-accessibility-section .transport-accessibility-inner .transport-accessibility-address-list {
-    margin-top: 285px !important;
+    margin-top: 325px !important;
   }
   .rents-section .occupied-area-per-floor-block .section-title {
     font-size: 21px;
@@ -12909,7 +12909,7 @@ body.fixed {
   }
   .page-header .header-box .header-content {
     width: 100%;
-    justify-content: flex-start!important;
+    justify-content: space-between!important;
   }
   .page-header .header-map-btn {
     margin-left: 0;
@@ -13054,6 +13054,10 @@ body.fixed {
   }
   .section-2 .container {
     padding: 0;
+  }
+  .news_arhive .section-2 .container,
+  .news_page .section-2 .container {
+    padding: 0 12.5px;
   }
 }
 
@@ -13262,6 +13266,7 @@ body.fixed {
   padding: 43px 110px;
   background-color: rgba(255, 199, 0, .75);
   min-width: 480px;
+  white-space: nowrap;
 }
 
 .home-slider-section .home-slider-container .home-slider-fix-box p {
@@ -14729,6 +14734,9 @@ body.fixed {
 
 .about-first-section .about-first-counts-block .about-first-count-item .about-first-count-item-inner {
   position: relative
+}
+.about-first-section .about-first-counts-block .about-first-count-item .about-first-count-item-inner h6{
+  white-space: nowrap;
 }
 
 .about-first-section .about-first-counts-block .about-first-count-item h6 {
@@ -16206,7 +16214,7 @@ body.fixed {
 }
 
 .tenants-item-section .company-description-box ul {
-  padding-left: 15px
+  padding-left: 25px
 }
 
 .tenants-item-section .company-gallery-box .company-gallery-carousel .company-gallery-carousel-img {
@@ -16392,6 +16400,9 @@ body.fixed {
     flex: 0 0 160px !important;
     list-style: 1.1;
     color: #000
+  }
+  .company-contact-box {
+    padding: 0 12.5px;
   }
 }
 
@@ -16791,7 +16802,8 @@ body.fixed {
 
 .main-tab-menu-list .main-tab-menu-item {
   padding: 0 25px;
-  color: #000
+  color: #000;
+  white-space: nowrap;
 }
 
 .main-tab-menu-list .main-tab-menu-item.active {
@@ -16995,6 +17007,9 @@ body.fixed {
     -webkit-box-shadow: 0 0 0 30px #fff inset !important;
     -webkit-text-fill-color: #000
   }
+  .home-service-box .more-box {
+    margin-bottom: 30px;
+  }
 }
 
 #section_1.contact-first-section>.fp-tableCell {
@@ -17070,9 +17085,9 @@ body.fixed {
     font-size: 14px
   }
   .news_arhive .news-card.first {
-    width: calc(100% + 30px);
+    /* width: calc(100% + 30px);
     margin-left: -15px;
-    margin-right: -15px;
+    margin-right: -15px; */
   }
   .news_page .news-item-section .news-item-section-inner {
     background: transparent;
@@ -18452,5 +18467,15 @@ body.fixed {
   .main-404:after,
   .main-404:before {
     height: 250px;
+  }
+}
+@media (max-width:767px) {
+  .tenants-item-page .product-card-image {
+    height: 221px;
+  }
+}
+@media (max-width: 415px) {
+  .product-card .product-card-wrap .product-card-title {
+    display: block;
   }
 }
